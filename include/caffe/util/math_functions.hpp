@@ -221,8 +221,10 @@ void caffe_gpu_sign(const int n, const Dtype* x, Dtype* y);
 
 // This returns a nonzero value if the input has its sign bit set.
 // The name sngbit is meant to avoid conflicts with std::signbit in the macro
-using std::signbit;
-DEFINE_CAFFE_CPU_UNARY_FUNC(sgnbit, y[i] = signbit(x[i]));
+//using std::signbit;
+//DEFINE_CAFFE_CPU_UNARY_FUNC(sgnbit, y[i] = signbit(x[i]));
+DEFINE_CAFFE_CPU_UNARY_FUNC(sgnbit, \
+    y[i] = static_cast<bool>((std::signbit)(x[i])));
 
 template<typename Dtype>
 void caffe_gpu_sgnbit(const int n, const Dtype* x, Dtype* y);
