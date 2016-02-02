@@ -3,7 +3,7 @@ import glob
 import numpy as np
 import read_binary_blob
 import cPickle
-feat_dir = '/media/researchshare/linjie/data/snapchat/features/c3d/'
+feat_dir = '/media/researchshare/linjie/data/snapchat/features/c3d_resize/'
 fds = os.listdir(feat_dir)
 feat_dim = 4096
 for fd in fds:

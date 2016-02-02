@@ -4,8 +4,8 @@ import shutil
 import numpy as np
 src_dir = '/media/researchshare/linjie/data/snapchat/video/'
 im_dir= '/media/researchshare/linjie/data/snapchat/images/'
-feat_dir = '/media/researchshare/linjie/data/snapchat/features/c3d/'
-sav_dir = '/media/researchshare/linjie/data/snapchat/similar_c3d/'
+feat_dir = '/media/researchshare/linjie/data/snapchat/features/c3d_resize/'
+sav_dir = '/media/researchshare/linjie/data/snapchat/similar_c3d_resize/'
 fds = os.listdir(feat_dir)
 vid_n = len(fds)
 print vid_n

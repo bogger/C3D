@@ -5,15 +5,15 @@ layers {
   top: "data"
   top: "label"
   image_data_param {
-    source: "prototxt/snapchat_list_frm.txt"
+    source: "prototxt/UCF_list_frm_test.txt"
     use_image: true
-    mean_file: "snapchat_test_mean_120_114.binaryproto"
+    mean_file: "UCF_test_mean.binaryproto"
     batch_size: 50
     crop_size: 112
     mirror: false
     show_data: 0
-    new_height: 120
-    new_width: 114
+    new_height: 128
+    new_width: 171
     new_length: 16
     shuffle: false
   }
